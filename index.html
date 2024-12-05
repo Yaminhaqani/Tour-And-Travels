@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Roboto Starts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+     <!-- roboto Ends -->
+      <!--Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!--Animate.css FadeIN etc-->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   <!--Animate.css Ends-->
+   <!-- LINEICONS START -->
+   <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
+   <!-- LINEICONS ENDS -->
+   <!-- PRELOAD IMAGES -->
+    <!-- <link rel="preload" href="https://res.cloudinary.com/dcqbwl3nk/image/upload/v1729333020/r1fsfg6lprdzgqlru51k.jpg" as="image">
+    <link rel="preload" href="https://res.cloudinary.com/dcqbwl3nk/image/upload/v1729415485/axucd1xwtmuqldklew6u.jpg" as="image">
+    <link rel="preload" href="https://res.cloudinary.com/dcqbwl3nk/image/upload/v1729333669/ffxjk6brjxv0qb7z046n.jpg" as="image">
+    <link rel="preload" href="https://res.cloudinary.com/dcqbwl3nk/image/upload/v1729333023/wsswp4agie5de9qta1wl.jpg" as="image">
+    <link rel="preload" href="https://res.cloudinary.com/dcqbwl3nk/image/upload/v1729333022/ot0rpollr4hds9dunice.jpg" as="image"> -->
+   <!-- PRELOAD ENDS -->
+    <!-- COUNTUP STARTS -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.7/countUp.min.js"></script> -->
+    <!-- COUNTUP ENDS -->
+
+    <!-- BOOTSTRAP STARTS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- BOOTSTRAP ENDS -->
+
+    <link rel="stylesheet" href="style.css">
+    <title>Decent Tour And Travels</title>
+</head>
+<body>
+   <!-- SCROLL TO TOP BUTTON STARTS -->
+   <button id="scrollToTopBtn" onclick="scrollToTop()"><i class="lni lni-angle-double-up"></i></button>
+   <!-- SCROLL TO TOP BUTTON ENDS -->
+
+       <!-- Loader Starts -->
+       <div class="loader">
+        <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+            <div class="wheel"></div>
+            <div class="hamster">
+                <div class="hamster__body">
+                    <div class="hamster__head">
+                        <div class="hamster__ear"></div>
+                        <div class="hamster__eye"></div>
+                        <div class="hamster__nose"></div>
+                    </div>
+                    <div class="hamster__limb hamster__limb--fr"></div>
+                    <div class="hamster__limb hamster__limb--fl"></div>
+                    <div class="hamster__limb hamster__limb--br"></div>
+                    <div class="hamster__limb hamster__limb--bl"></div>
+                    <div class="hamster__tail"></div>
+                </div>
+            </div>
+            <div class="spoke"></div>
+        </div>
+    </div>
+        <!-- Loader Ends -->
+
+  <div class="container-fluid container-one">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade backoverlay" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Images/nature-3082832_1280.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="Images/gondola2.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="Images/horse.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="Images/lavender.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="Images/saffron.webp" class="d-block w-100" alt="...">
+        </div>
+        
+      </div>
+    </div>
+
+
+    <!-- Nav Starts -->
+     <div class="nav">
+        <div class="logo">
+            <img src="Images/logo.webp" alt="logo" srcset="">
+        </div>
+        <nav class="links">
+            <ul>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><i class="fa fa-home fa-fw" aria-hidden="true"></i>HOME</a>
+        </li>
+        <li class="nav-item">
+          <a href="about-us.html" class="nav-link"><i class="fa fa-users fa-fw" aria-hidden="true"></i>ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <a href="#packages2" class="nav-link"><i class="fa fa-suitcase fa-fw" aria-hidden="true"></i>PACKAGES</a>
+        </li>
+        <li class="nav-item">
+          <a href="#destination" class="nav-link"><i class="fa fa-tree fa-fw" aria-hidden="true"></i>DESTINATIONS</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.google.co.in/search?q=decent+tour+and+travels&sca_esv=9ed8fe13a8c6ea88&sca_upv=1&sxsrf=ADLYWIL_bCYk_V8AMPBcmb2pqEATMrXoXw%3A1715682001786&source=hp&ei=0TpDZpuFLvLa1e8PqOmluAk&iflsig=AL9hbdgAAAAAZkNI4SvI75_OskZYoT8XY1dM4TLEiLiK&ved=0ahUKEwjbsYzC9YyGAxVybfUHHah0CZcQ4dUDCBU&uact=5&oq=decent+tour+and+travels&gs_lp=Egdnd3Mtd2l6IhdkZWNlbnQgdG91ciBhbmQgdHJhdmVsczIKECMYgAQYJxiKBTIFEAAYgAQyBRAAGIAEMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigUyCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigUyCBAAGIAEGKIEMggQABiABBiiBEiZCVD3BVj3BXABeACQAQCYAaoBoAGqAaoBAzAuMbgBA8gBAPgBAvgBAZgCAqACtQGoAgrCAgcQIxgnGOoCmAMHkgcDMS4xoAfXBw&sclient=gws-wiz#ip=1&lrd=0x38e18fa095f72827:0xe93dedd5288bcc43,1,,,,"target="_blank" class="nav-link"><i class="fa fa-star fa-fw" aria-hidden="true"></i>REVIEWS</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><i class="fa fa-thumbs-up fa-fw" aria-hidden="true"></i>TESTIMONIALS</a>
+        </li>  
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link"><i class="fa fa-phone fa-fw" aria-hidden="true"></i>CONTACT US</a>
+        </li>
+            </ul>
+        </nav>
+
+        <!-- HAMBURGER STARTS -->
+     <div class="ham">
+      <div class="line" id="one"></div>
+      <div class="line" id="two"></div>
+      <div class="line" id="three"></div>
+     </div>
+     <!-- HAMBURGER ENDS -->
+     </div>
+     <!-- Nav Ends -->
+
+     <div class="content-one animate__animated animate__delay-0.6s" data-animate="animate__fadeIn">
+      <h2>Curated luxury destinations</h2>
+      <p>Travel | Treasure | Memories</p>
+     </div>
+    </div>
+    <div class="container-two-cover">
+    <div class="container-two">
+      <div class="left">
+        <div class="left-content">
+        <h2 class="animate__animated animate__delay-0.6s" data-animate="animate__fadeIn">Discover Kashmir Like Never Before</h2>
+        <h4 class="animate__animated animate__delay-0.8s" data-animate="animate__fadeIn">Curated Luxury Experiences Designed Just for You, to make you fall in Love with Valley</h4>
+        <p class="animate__animated animate__delay-0.3s" data-animate="animate__fadeIn">Immerse yourself in the unparalleled beauty of Kashmir with our handpicked experiences. Whether it's the majestic mountains, serene lakes, or rich cultural heritage, we’re here to make your journey truly extraordinary. Wander through lush valleys, explore vibrant local markets, and uncover the true essence of Kashmir. </p>
+      </div>
+      <div class="btn-know animate__animated animate__delay-0.25s" data-animate="animate__fadeIn">
+        <a href="about-us.html" class="know-more">Know More</a>
+    </div>
+      
+      </div>
+      <div class="right">
+        <div class="img-one gallery animate__animated animate__delay-0.25s" data-animate="animate__fadeIn">
+          <img src="Images/kashmir_with_shikara_and_chinar_leaves_in_autumn__by_reyanahmad_dfuomgw-fullview.webp" alt="shikara" loading="lazy">
+        </div>
+        <div class="img-two gallery animate__animated animate__delay-0.25s" data-animate="animate__fadeIn">
+          <img src="Images/an_outdoor_scene_of_a_person_harvesting-Photoroom.webp" alt="saffron-harvest" loading="lazy">
+        </div>
+        <div class="img-three gallery animate__animated animate__delay-0.25s" data-animate="animate__fadeIn">
+          <img src="Images/woman snowboard.webp" alt="snowboarding" loading="lazy">
+        </div>
+        <div class="img-four gallery animate__animated animate__delay-0.25s" data-animate="animate__fadeIn">
+          <img src="Images/woman chinar.webp" alt="autmn" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-three-cover">
+    <div class="h2-center">
+      <h2 id="card-heading" class="animate__animated animate__delay-0.7s" data-animate="animate__fadeIn">OUR EXCLUSIVE FEATURES</h2>
+    </div>
+    
+    <div class="container-three-outer">
+    <div class="container-three-inner">
+    <div class="cards">
+      <div class="cards-inner animate__animated animate__delay-0.2s" data-animate="animate__fadeIn">
+        <div class="cards-icon">
+          <svg width="80" height="80" viewBox="0 0 25 24" fill="#062173" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0) scale(-1, 1) translate(-0, 0)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.9104 6.27879C2.71011 6.60041 1.99779 7.83416 2.31941 9.03446L4.75231 18.1016V18.4998C4.75231 19.7424 5.75967 20.7498 7.00231 20.7498H20.0023C21.2449 20.7498 22.2523 19.7424 22.2523 18.4998V9.82408C22.2523 8.59588 21.2682 7.59753 20.0455 7.57448L19.2231 4.50513C18.9015 3.30483 17.6677 2.59252 16.4674 2.91414L3.9104 6.27879ZM20.7523 10.8172V9.82408C20.7523 9.40986 20.4165 9.07408 20.0023 9.07408H7.00231C6.58809 9.07408 6.25231 9.40986 6.25231 9.82408V10.8172H20.7523ZM4.75231 12.3186V9.82408C4.75231 8.58143 5.75967 7.57408 7.00231 7.57408H18.4925L17.7742 4.89336C17.667 4.49326 17.2558 4.25582 16.8557 4.36303L4.29863 7.72768C3.89853 7.83488 3.6611 8.24613 3.7683 8.64623L4.75231 12.3186ZM6.25231 13.6145H20.7523V18.4998C20.7523 18.914 20.4165 19.2498 20.0023 19.2498H7.00231C6.5881 19.2498 6.25231 18.914 6.25231 18.4998V13.6145Z" fill="#062173"/>
+            </svg> 
+        </div>
+      <h2>Tailored Itineraries</h2>
+      <p>We understand that every traveler has unique preferences, which is why we offer fully customizable tour plans across Kashmir. Whether you're seeking adventure, relaxation, or cultural immersion, we adjust every aspect of your itinerary to match your desires. From hand-picked accommodations to exclusive activities and local experiences, we ensure a personalized journey that reflects your ideal vacation.</p>
+    </div>
+  </div>
+    <div class="cards">
+      <div class="cards-inner animate__animated animate__delay-0.2s"  data-animate="animate__fadeIn">
+        <div class="cards-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" height="80" width="80.5" viewBox="0 0 640 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#062173" d="M336 0c-26.5 0-48 21.5-48 48l0 92.1 71.4 118.4c2.5-1.6 5.4-2.5 8.6-2.5l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-3.5 0 73.8 122.4c12.4 20.6 12.9 46.3 1.2 67.3c-.4 .8-.9 1.6-1.4 2.3L592 512c26.5 0 48-21.5 48-48l0-224c0-26.5-21.5-48-48-48l-24 0 0-72c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 72-40 0 0-144c0-26.5-21.5-48-48-48L336 0zm32 64l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16zM352 176c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zm160 96c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zm16 80l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16zM224 188.9L283.8 288 223 288l-48 64-24.6-41.2L224 188.9zm29.4-44.2C247.1 134.3 236 128 224 128s-23.1 6.3-29.4 16.7L5.1 458.9c-6.5 10.8-6.7 24.3-.7 35.3S22 512 34.5 512l379.1 0c12.5 0 24-6.8 30.1-17.8s5.8-24.5-.7-35.3L253.4 144.7z"/></svg>
+        </div>
+      <h2>Exclusive Local Experiences</h2>
+      <p>Our curated tours take you beyond the ordinary, offering access to Kashmir’s best-kept secrets. Whether it's exploring villages, indulging in traditional Wazwan feasts, or witnessing the breathtaking beauty of untrodden landscapes, we design tours that showcase the true essence of Kashmir. Each tour is thoughtfully crafted to give you a deep, immersive connection to the region’s culture, history, and natural wonders.</p>
+    </div>
+    </div>
+    <div class="cards">
+      <div class="cards-inner animate__animated animate__delay-0.2s"  data-animate="animate__fadeIn">
+        <div class="cards-icon">
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="#062173" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.16509 4.45923C5.55285 3.71602 6.32162 3.25 7.15991 3.25H16.8414C17.6796 3.25 18.4484 3.71602 18.8362 4.45923L20.9472 8.50541C21.3717 9.31907 21.2595 10.309 20.6637 11.007L12.5711 20.4869C12.4286 20.6539 12.2201 20.75 12.0006 20.75C11.7812 20.75 11.5727 20.6539 11.4302 20.4869L3.33758 11.007C2.74173 10.309 2.62952 9.31907 3.05404 8.50541L5.16509 4.45923ZM6.94479 4.78149L9.03286 8.25816L11.1398 4.75H7.15991C7.08593 4.75 7.01359 4.76089 6.94479 4.78149ZM10.3593 8.96289L12.0006 6.23012L13.6419 8.96289H10.3593ZM15.5285 10.4629L13.5919 16.9808L19.156 10.4629H15.5285ZM10.4093 16.9808L8.47271 10.4629H4.8453L10.4093 16.9808ZM10.0375 10.4629L12.0006 17.0699L13.9637 10.4629H10.0375ZM18.0068 6.11246L16.2949 8.96289H19.494L18.0068 6.11246ZM16.8414 4.75C16.9153 4.75 16.9877 4.76089 17.0565 4.78149L14.9684 8.25816L12.8614 4.75H16.8414ZM7.70637 8.96289L5.99442 6.11246L4.50724 8.96289H7.70637Z" fill="#062173"/>
+            </svg>
+            
+        </div>
+      <h2>Handpicked Accommodations & Extras</h2>
+      <p>We partner with local artisans, boutique hotels, and premium service providers to ensure your stay is comfortable and authentic. From heritage hotels to houseboats on the Dal Lake, each accommodation is carefully selected to enhance your experience. Whether you want to add cultural workshops, private tours, or luxury transport, we can arrange it all for you to ensure an unforgettable journey.</p>
+    </div>
+  </div>
+    <div class="cards">
+      <div class="cards-inner animate__animated animate__delay-0.2s"  data-animate="animate__fadeIn">
+        <div class="cards-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 512 700"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#062173" d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9L0 168c0 13.3 10.7 24 24 24l110.1 0c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24l0 104c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65 0-94.1c0-13.3-10.7-24-24-24z"/></svg>
+        </div>
+      <h2>24/7 Customer Support</h2>
+      <p>Your comfort and peace of mind are our top priorities. With 24/7 customer service, we're always just a phone call away. Whether it's a last-minute change to your plans or a request for assistance, our dedicated team is available around the clock to ensure your trip is smooth and stress-free. We're here to take care of every detail, so you can focus on enjoying your time in Kashmir.</p>
+    </div>
+  </div>
+  </div>
+</div>
+  </div>
+
+  <div class="container-four-outer">
+    <div class="container-four-inner">
+      <div class="counter-cards animate__animated animate__delay-0.2s"  data-animate="animate__fadeIn" data-count="20">
+        <div class="counter-icon">
+          <svg width="80" height="80" viewBox="0 0 25 25" fill="#ff7f50" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0)">
+            <path d="M5.50436 4.63189C5.0073 4.63189 4.60436 5.03483 4.60436 5.53189C4.60436 6.02894 5.0073 6.43189 5.50436 6.43189H5.5118C6.00886 6.43189 6.4118 6.02894 6.4118 5.53189C6.4118 5.03483 6.00886 4.63189 5.5118 4.63189H5.50436Z" fill="#ff7f50"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.15962 10.4077C5.22892 10.3219 5.33831 10.1864 5.51098 9.97237L5.04002 10.5561C5.31541 10.7783 5.70863 10.7778 5.98344 10.5548L5.51098 9.97237C5.61407 10.0995 5.69467 10.1988 5.7577 10.2765L6.12269 10.7265L5.82711 10.362C5.98356 10.5548 5.98331 10.555 5.98344 10.5548L5.98425 10.5542L5.98528 10.5533L5.98801 10.5511L5.99609 10.5445L6.02236 10.5225C6.0442 10.504 6.07455 10.478 6.11218 10.4447C6.1874 10.3783 6.29209 10.2827 6.41643 10.1609C6.66428 9.91804 6.99458 9.56666 7.3261 9.12999C7.97631 8.27355 8.69653 7.00309 8.69653 5.53186C8.69653 3.76896 7.26742 2.33984 5.50451 2.33984C3.74161 2.33984 2.3125 3.76896 2.3125 5.53186C2.3125 7.00434 3.03708 8.27533 3.69055 9.13151C4.02381 9.56816 4.35583 9.91949 4.60493 10.1623C4.7299 10.2841 4.83511 10.3796 4.91069 10.4461C4.94852 10.4793 4.97901 10.5053 5.00095 10.5237L5.02733 10.5457L5.03544 10.5523L5.03818 10.5546L5.03922 10.5554L5.04002 10.5561C5.04013 10.5562 5.03986 10.5559 5.12028 10.4564L4.90235 10.7265L5.15962 10.4077ZM3.8125 5.53186C3.8125 4.59738 4.57004 3.83984 5.50451 3.83984C6.43899 3.83984 7.19653 4.59738 7.19653 5.53186C7.19653 6.52559 6.69897 7.47539 6.1314 8.22296C5.91338 8.51013 5.69461 8.75482 5.50955 8.94574C5.32318 8.75456 5.10267 8.50935 4.88293 8.22144C4.31216 7.47361 3.8125 6.52434 3.8125 5.53186Z" fill="#ff7f50"/>
+            <path d="M19.1206 16.2491C18.6235 16.2491 18.2206 16.652 18.2206 17.1491C18.2206 17.6461 18.6235 18.0491 19.1206 18.0491H19.128C19.6251 18.0491 20.028 17.6461 20.028 17.1491C20.028 16.652 19.6251 16.2491 19.128 16.2491H19.1206Z" fill="#ff7f50"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.6559 22.173C18.6561 22.1731 18.6562 22.1733 19.1272 21.5896L18.6559 22.173C18.9312 22.3951 19.3248 22.3949 19.5997 22.172L19.1272 21.5896C19.5997 22.172 19.5995 22.1722 19.5997 22.172L19.6005 22.1714L19.6015 22.1705L19.6042 22.1683L19.6123 22.1616L19.6386 22.1397C19.6604 22.1212 19.6908 22.0952 19.7284 22.0619C19.8036 21.9955 19.9083 21.8999 20.0326 21.7781C20.2805 21.5352 20.6108 21.1838 20.9423 20.7472C21.5925 19.8907 22.3127 18.6203 22.3127 17.149C22.3127 15.3861 20.8836 13.957 19.1207 13.957C17.3578 13.957 15.9287 15.3861 15.9287 17.149C15.9287 18.6215 16.6533 19.8925 17.3068 20.7487C17.64 21.1853 17.972 21.5367 18.2211 21.7795C18.3461 21.9013 18.4513 21.9968 18.5269 22.0632C18.5647 22.0965 18.5952 22.1225 18.6172 22.1409L18.6435 22.1629L18.6517 22.1695L18.6544 22.1718L18.6559 22.173ZM17.4287 17.149C17.4287 16.2146 18.1863 15.457 19.1207 15.457C20.0552 15.457 20.8127 16.2146 20.8127 17.149C20.8127 18.1428 20.3152 19.0926 19.7476 19.8402C19.5296 20.1273 19.3108 20.372 19.1258 20.5629C18.9394 20.3718 18.7189 20.1265 18.4991 19.8386C17.9284 19.0908 17.4287 18.1415 17.4287 17.149Z" fill="#ff7f50"/>
+            <path d="M7.95031 10.7265H10.7091C11.8984 10.7265 12.8625 11.6905 12.8625 12.8798C12.8625 14.069 11.8984 15.0331 10.7091 15.0331H5.9697C3.95202 15.0331 2.31637 16.6688 2.31637 18.6864C2.31637 20.7041 3.95202 22.3398 5.96969 22.3398H16.6221C16.442 22.14 16.2496 21.912 16.0562 21.6587C15.8757 21.4222 15.6824 21.1479 15.4933 20.8398H5.96969C4.78045 20.8398 3.81637 19.8757 3.81637 18.6864C3.81637 17.4972 4.78045 16.5331 5.9697 16.5331H10.7091C12.7268 16.5331 14.3625 14.8975 14.3625 12.8798C14.3625 10.8621 12.7268 9.22647 10.7091 9.22647H9.07552C8.88923 9.53099 8.6988 9.80242 8.52077 10.0369C8.32574 10.2938 8.13164 10.5247 7.95031 10.7265Z" fill="#ff7f50"/>
+            </svg>
+            
+        </div>
+        <h2>0 +</h2>
+        <p>Total Trips</p>
+      </div>
+      <div class="counter-cards animate__animated animate__delay-0.2s"  data-animate="animate__fadeIn" data-count="5">
+        <div class="counter-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" height="80" width="80" viewBox="0 0 640 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ff7f50" d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM625 177L497 305c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L591 143c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+        </div>
+        <h2>0K</h2>
+        <p>Satisfied Clients</p>
+      </div>
+      <div class="counter-cards animate__animated animate__delay-0.2s"  data-animate="animate__fadeIn" data-count="6">
+        <div class="counter-icon">
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="#ff7f50" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6387 6.87094L14.1192 4.74639C14.4376 3.33902 13.3676 2 11.9247 2H11.6692C10.9853 2 10.3386 2.31102 9.91159 2.84521L6.40881 7.22761H4.25C3.00736 7.22761 2 8.23497 2 9.47761V16.435C2 17.6776 3.00736 18.685 4.25 18.685H6.68024L6.68633 18.6864C6.74811 18.7011 6.83803 18.7221 6.95293 18.7479C7.18269 18.7995 7.51273 18.8706 7.91793 18.9495C8.72718 19.107 9.84188 19.2966 11.0594 19.4233C12.2736 19.5496 13.6097 19.6154 14.8561 19.5178C16.0867 19.4214 17.3131 19.16 18.2456 18.5682C20.1839 17.3381 21.4767 15.2871 21.8717 13.1949C22.2678 11.0971 21.7704 8.85732 19.9779 7.39626C19.2743 6.82281 18.4122 6.56286 17.5749 6.46799C16.7358 6.37293 15.8728 6.43782 15.1118 6.55723C14.5675 6.64265 14.0626 6.75806 13.6387 6.87094ZM11.6692 3.5C11.4412 3.5 11.2256 3.60367 11.0833 3.78174L7.51948 8.24051V17.3367C7.70855 17.3776 7.9395 17.4256 8.20452 17.4771C8.98435 17.6289 10.0534 17.8105 11.2146 17.9313C12.3791 18.0524 13.6166 18.1103 14.739 18.0224C15.8773 17.9332 16.8149 17.6997 17.4419 17.3017C19.0101 16.3065 20.0753 14.6241 20.3978 12.9166C20.7191 11.2148 20.2934 9.58859 19.0302 8.55896C18.6223 8.22647 18.0681 8.03346 17.4061 7.95846C16.7459 7.88366 16.0267 7.93201 15.3444 8.03909C14.6656 8.14561 14.0477 8.30626 13.5981 8.44118C13.3741 8.50838 13.1939 8.56858 13.0712 8.6114C13.0099 8.6328 12.9631 8.64981 12.9325 8.66114L12.899 8.67367L12.8918 8.67642C12.6334 8.77673 12.3398 8.72671 12.1298 8.54576C11.9198 8.36475 11.8267 8.08261 11.8879 7.81215L12.6562 4.41546C12.7623 3.94634 12.4057 3.5 11.9247 3.5H11.6692ZM6.01948 17.185V8.72761H4.25C3.83579 8.72761 3.5 9.0634 3.5 9.47761V16.435C3.5 16.8492 3.83579 17.185 4.25 17.185H6.01948Z" fill="#ff7f50"/>
+            </svg>
+            
+        </div>
+        <h2>0K</h2>
+        <p>Positive Reviews</p>
+      </div>
+      <div class="counter-cards animate__animated animate__delay-0.2s"  data-animate="animate__fadeIn" data-count="99">
+        <div class="counter-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" height="80" width="80" viewBox="0 0 640 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ff7f50" d="M0 32C0 14.3 14.3 0 32 0L480 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l0 384c17.7 0 32 14.3 32 32s-14.3 32-32 32l-176 0 0-48c0-26.5-21.5-48-48-48s-48 21.5-48 48l0 48L32 512c-17.7 0-32-14.3-32-32s14.3-32 32-32L32 64C14.3 64 0 49.7 0 32zm96 80l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zM240 96c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zM112 192c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM328 384c13.3 0 24.3-10.9 21-23.8c-10.6-41.5-48.2-72.2-93-72.2s-82.5 30.7-93 72.2c-3.3 12.8 7.8 23.8 21 23.8l144 0z"/></svg>
+        </div>
+        <h2>0+</h2>
+        <p>Hotels Available</p>
+      </div>
+      <div class="counter-cards animate__animated animate__delay-0.2s"  data-animate="animate__fadeIn" data-count="50">
+        <div class="counter-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" height="80" width="83.5" viewBox="0 0 640 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ff7f50" d="M48 48l88 0c13.3 0 24-10.7 24-24s-10.7-24-24-24L32 0C14.3 0 0 14.3 0 32L0 136c0 13.3 10.7 24 24 24s24-10.7 24-24l0-88zM175.8 224a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm-26.5 32C119.9 256 96 279.9 96 309.3c0 14.7 11.9 26.7 26.7 26.7l56.1 0c8-34.1 32.8-61.7 65.2-73.6c-7.5-4.1-16.2-6.4-25.3-6.4l-69.3 0zm368 80c14.7 0 26.7-11.9 26.7-26.7c0-29.5-23.9-53.3-53.3-53.3l-69.3 0c-9.2 0-17.8 2.3-25.3 6.4c32.4 11.9 57.2 39.5 65.2 73.6l56.1 0zm-89.4 0c-8.6-24.3-29.9-42.6-55.9-47c-3.9-.7-7.9-1-12-1l-80 0c-4.1 0-8.1 .3-12 1c-26 4.4-47.3 22.7-55.9 47c-2.7 7.5-4.1 15.6-4.1 24c0 13.3 10.7 24 24 24l176 0c13.3 0 24-10.7 24-24c0-8.4-1.4-16.5-4.1-24zM464 224a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm-80-32a64 64 0 1 0 -128 0 64 64 0 1 0 128 0zM504 48l88 0 0 88c0 13.3 10.7 24 24 24s24-10.7 24-24l0-104c0-17.7-14.3-32-32-32L504 0c-13.3 0-24 10.7-24 24s10.7 24 24 24zM48 464l0-88c0-13.3-10.7-24-24-24s-24 10.7-24 24L0 480c0 17.7 14.3 32 32 32l104 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-88 0zm456 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l104 0c17.7 0 32-14.3 32-32l0-104c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 88-88 0z"/></svg>
+        </div>
+        <h2>0+</h2>
+        <p>Group Trips</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-five-outer">
+   <div class="backoverlay-two"></div>
+    <div class="container-five-inner">
+    <h2 class="animate__animated animate__delay-0.2s"  data-animate="animate__fadeIn">Let us create a personalized Kashmir journey, curated just for you.</h2>
+    <div class="btn-contact animate__animated animate__delay-0.25s" data-animate="animate__fadeIn">
+      <a href="contact.html" class="contact-us">Contact Us</a>
+    </div>
+  </div>
+  </div>
+
+  <div class="container-six-outer">
+    <div class="h2-center">
+      <h2 id="card-heading-two" class="animate__animated animate__delay-0.25s" data-animate="animate__fadeIn">OUR EXCLUSIVE PACKAGES</h2>
+    </div>
+    <div class="container-six-inner">
+      <div class="container-six-content">
+      <div class="package animate__animated" data-animate="animate__fadeIn">
+        <div>
+          <div class="packageImage">
+            <img src="Images/Solo.webp" alt="" srcset="" loading="lazy">
+          </div>
+          <h2>Solo:</h2>
+          <h6>Experience the magic of Kashmir on your own terms! Perfect for solo travelers seeking serenity, adventure, and the unparalleled beauty of the valley.</h6>
+          <p>Starting at:<span>₹27,990</span></p>
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Choose
+          </button>
+        </div>
+        
+      </div>
+      <div class="package animate__animated" data-animate="animate__fadeIn">
+        <div>
+          <div class="packageImage">
+            <img src="Images/couple.webp" alt="" srcset="" loading="lazy">
+          </div>
+          <h2>Couple:</h2>
+          <h6>Escape to the romantic landscapes of Kashmir! From shikara rides to snow-capped peaks, our couple packages promise unforgettable moments with your loved one.</h6>
+          <p>Starting at:<span>₹35,990</span></p>
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Choose</button>
+        </div>
+      </div>
+      <div class="package animate__animated" data-animate="animate__fadeIn">
+        <div>
+          <div class="packageImage">
+            <img src="Images/group.webp" alt="" srcset="" loading="lazy">
+          </div>
+          <h2>Group:</h2>
+          <h6>Discover the wonders of Kashmir with your crew! Tailored for families and friends, our group packages ensure fun, adventure, and cherished memories in paradise.</h6>
+          <p>Starting at:<span>₹14,990*</span></p>
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Choose</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Form</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="" class="modalForm" id="myForm">
+          <input type="text" id="name" name="name" placeholder="Name" required> 
+          <input type="tel" id="number" name="number" placeholder="Phone Number" required>
+          <input type="email" id="email" placeholder="Email Address" name="email" required>
+          <label for="options">What package are you interested in?</label>
+          <select name="options" id="options" required>
+            <option value="" disabled selected>- Select -</option>
+            <option value="Solo">Solo</option>
+            <option value="Couple">Couple</option>
+            <option value="Group">Group</option>
+          </select>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- Modal -->
+
+  <div class="container-seven-outer">
+    <div class="bg-overlay"></div>
+    <h2 class="text-center animate__animated" data-animate="animate__fadeIn">Frequently asked questions</h2>
+    <div class="container-seven-inner">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" data-animate="animate__fadeIn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Do you offer customized tours?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Yes!</strong> All our tours are fully customizableto suite your preferences. Whether you're lookinf for adventure, cultural immersion, or relaxation, we will tailor the itinerary to meet your needs.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed animate__animated animate__delay-0.1s" data-animate="animate__fadeIn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              How do I book a customized package?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Simply</strong> get in touch with us, and our team will work closely with you to design a bespoke package that reflects your desires.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed animate__animated animate__delay-0.1s" data-animate="animate__fadeIn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              What is your cancellation policy?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>We understand that plans can change, but cancellations incur costs. To offset these expenses, the following policy applies:</strong> <br><br>
+              <strong>30 days or more before departure:</strong> 0% of the total cost (no cancellation fee). <br>
+              <strong>15–29 days before departure:</strong> 50% of the total cost. <br>
+              <strong>14 days or less before departure or no-show:</strong> 100% of the total cost. <br>
+              Additionally, any non-recoverable costs from our suppliers will be charged in all cases. <br><br> In the event of unrest in Kashmir, we will provide a full refund. Unrest is defined as situations where there is no vehicular movement or hotels are not operational.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed animate__animated animate__delay-0.1s" data-animate="animate__fadeIn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              What additional information should I know before traveling to Kashmir?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Here are some essential travel tips and details to keep in mind:</strong> <br><br>
+              
+              <strong>Children:</strong> Children below 5 years of age can travel free of charge. <br>
+              
+              <strong>Mobile Connectivity:</strong> Only post-paid cellular connections work in Kashmir. Prepaid connections are not operational in the region. <br>
+              
+              <strong>Airport Guidelines:</strong> Arrive at the airport at least 3 hours prior to your departure to account for mandatory security checks. <br>
+              
+              <strong>Weather Preparation:</strong> Check the weather forecast before your trip and pack accordingly. Warm woolens are recommended for winter, while light woolens are suitable for summer. For real-time updates, visit <a href="http://www.accuweather.com/en/in/srinagar/361707/weather-forecast/361707">AccuWeather</a>. <br>
+              
+              <strong>Houseboat Transfers:</strong> If you are staying in a houseboat, coordinate with the houseboat staff or your local tour representative to arrange a Shikara for crossing to the shore prior to departure from Srinagar. <br>
+              
+              <strong>Driver Charges:</strong> If your driver requests additional charges during the tour, confirm with your local tour coordinator before making any payment. <br>
+              
+              <strong>Meals:</strong> Please note that only breakfast and dinner are included in your itinerary. Lunch is not provided. <br><br>
+              
+              <strong>Local Charges:</strong> <br>
+              - Entry to local gardens: ₹30–₹50 per person. <br>
+              - Gondola rides in Gulmarg: ₹750 for the first phase and ₹950 for the second phase per person (round trip). <br>
+              - Union cab service for Betab Valley, Aru Valley, and Chandanwari in Pahalgam: ₹2100 per cab. <br>
+              
+              <strong>Important Tip:</strong> To make the most of your trip, always follow the schedule and instructions provided by your tour coordinator.
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+    <div class="div">
+      <div class="div-one animate__animated animate__delay-0.3s" data-animate="animate__fadeIn"">
+        <h1>Help us create your bespoke Kashmir experience</h1>
+      </div>
+      
+      <div class="btn-contact animate__animated animate__delay-0.35s div-two" data-animate="animate__fadeIn">
+        <a href="contact.html" class="contact-us">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="footer-container-outer">
+      <div class="footer-container-inner">
+      <div class="footer-info animate__animated animate__delay-0.3s" data-animate="animate__fadeIn">
+        <div>
+          <img src="Images/logo.webp" alt="" loading="lazy">
+        </div>
+        <p>We are a team of Travel Experts, Culture Enthusiasts, and Hospitality Professionals dedicated to curating exceptional experiences in Kashmir.</p>
+      </div>
+
+      <div class="footer-links animate__animated animate__delay-0.3s" data-animate="animate__fadeIn">
+        <h2>QUICK LINKS</h2>
+        <div class="div">
+          <ul>
+            <li class="footer-item">
+              <a href="about-us.html" class="nav-link"><i class="fa fa-users fa-fw" aria-hidden="true"></i>ABOUT US</a>
+            </li>
+            <li class="footer-item">
+              <a href="#packages2" class="nav-link"><i class="fa fa-suitcase fa-fw" aria-hidden="true"></i>PACKAGES</a>
+            </li>
+            <li class="footer-item">
+              <a href="#destination" class="nav-link"><i class="fa fa-tree fa-fw" aria-hidden="true"></i>DESTINATIONS</a>
+            </li>
+            <li class="footer-item">
+              <a href="https://www.google.co.in/search?q=decent+tour+and+travels&sca_esv=9ed8fe13a8c6ea88&sca_upv=1&sxsrf=ADLYWIL_bCYk_V8AMPBcmb2pqEATMrXoXw%3A1715682001786&source=hp&ei=0TpDZpuFLvLa1e8PqOmluAk&iflsig=AL9hbdgAAAAAZkNI4SvI75_OskZYoT8XY1dM4TLEiLiK&ved=0ahUKEwjbsYzC9YyGAxVybfUHHah0CZcQ4dUDCBU&uact=5&oq=decent+tour+and+travels&gs_lp=Egdnd3Mtd2l6IhdkZWNlbnQgdG91ciBhbmQgdHJhdmVsczIKECMYgAQYJxiKBTIFEAAYgAQyBRAAGIAEMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigUyCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigUyCBAAGIAEGKIEMggQABiABBiiBEiZCVD3BVj3BXABeACQAQCYAaoBoAGqAaoBAzAuMbgBA8gBAPgBAvgBAZgCAqACtQGoAgrCAgcQIxgnGOoCmAMHkgcDMS4xoAfXBw&sclient=gws-wiz#ip=1&lrd=0x38e18fa095f72827:0xe93dedd5288bcc43,1,,,,"target="_blank" class="nav-link"><i class="fa fa-star fa-fw" aria-hidden="true"></i>REVIEWS</a>
+            </li> 
+            <li class="footer-item">
+              <a href="contact.html" class="nav-link"><i class="fa fa-phone fa-fw" aria-hidden="true"></i>CONTACT US</a>
+            </li>
+                </ul>
+           
+        </div>
+        
+      </div>
+      <div class="Address animate__animated animate__delay-0.3s" data-animate="animate__fadeIn">
+        <h2>OUR ADDRESS</h2>
+        <a class="location" href="https://maps.app.goo.gl/f4tLYirm33giNHwk9"><svg width="23" height="23" viewBox="0 0 25 25" fill="#737373" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M4.56538 12.7847C2.64868 12.0166 2.69235 9.28826 4.63265 8.58188L18.6297 3.48619C20.4257 2.83233 22.1675 4.5741 21.5136 6.37015L16.4179 20.3672C15.7116 22.3075 12.9833 22.3511 12.2152 20.4344L10.146 15.2711C10.0697 15.0808 9.91898 14.9301 9.72877 14.8539L4.56538 12.7847ZM5.14579 9.99138C4.49902 10.2268 4.48446 11.1363 5.12336 11.3923L10.2867 13.4615C10.8574 13.6902 11.3096 14.1424 11.5383 14.7131L13.6075 19.8765C13.8636 20.5154 14.773 20.5008 15.0084 19.854L20.1041 5.85701C20.3221 5.25833 19.7415 4.67774 19.1428 4.89569L5.14579 9.99138Z" fill="#737373"/>
+          </svg>01 Main Road Batamaloo,<br> Near Akbar Hotel Srinagar -190001</a>
+          <a href="tel:+919018312187"><i class="fa fa-phone fa-fw" aria-hidden="true"></i>+91 90183 12187</a>
+          <a href="tel:+916005992266"><i class="fa fa-phone fa-fw" aria-hidden="true"></i>+91 60059 92266</a>
+          <a href="mailto:decenttourandtravels@gmail.com"><svg width="23" height="23" viewBox="0 0 24 24" fill="#737373" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M22 6.25649V17.25C22 18.4926 20.9926 19.5 19.75 19.5H4.25C3.00736 19.5 2 18.4926 2 17.25V6.23398C2 6.22372 2.00021 6.2135 2.00061 6.20334C2.01781 5.25972 2.78812 4.5 3.73592 4.5H20.2644C21.2229 4.5 22 5.27697 22.0001 6.23549C22.0001 6.24249 22.0001 6.24949 22 6.25649ZM3.5 8.187V17.25C3.5 17.6642 3.83579 18 4.25 18H19.75C20.1642 18 20.5 17.6642 20.5 17.25V8.18747L13.2873 13.2171C12.5141 13.7563 11.4866 13.7563 10.7134 13.2171L3.5 8.187ZM20.5 6.2286L20.5 6.23398V6.24336C20.4976 6.31753 20.4604 6.38643 20.3992 6.42905L12.4293 11.9867C12.1716 12.1664 11.8291 12.1664 11.5713 11.9867L3.60116 6.42885C3.538 6.38481 3.50035 6.31268 3.50032 6.23568C3.50028 6.10553 3.60577 6 3.73592 6H20.2644C20.3922 6 20.4963 6.10171 20.5 6.2286Z" fill="#737373"/>
+            </svg>decenttourandtravels@gmail.com</a>
+
+        
+      </div>
+
+      <div class="connect animate__animated animate__delay-0.3s" data-animate="animate__fadeIn"">
+        <h2>CONNECT WITH US</h2>
+<div class="card-social">
+  <a href="https://www.instagram.com/decent_tour_and_travels/" class="socialContainer containerOne" target="_blank">
+    <svg class="socialSvg instagramSvg" viewBox="0 0 16 16"> <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path> </svg>
+  </a>
+  
+  <a href="#" class="socialContainer containerTwo" target="_blank">
+    <svg xmlns="http://www.w3.org/2000/svg" class="socialSvg youtubeSvg" viewBox="0 0 576 512">
+      <path fill="#ffffff" d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/>
+  </svg>
+  </a>
+    
+  <a href="https://www.facebook.com/Decenttourandtravels/" class="socialContainer containerThree" target="_blank">
+    <svg xmlns="http://www.w3.org/2000/svg" class="socialSvg facebookSvg"  viewBox="0 0 448 512">
+      <path fill="#ffffff" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
+  </svg>
+  </a>
+  
+  <a href="https://wa.me/916005992266" class="socialContainer containerFour" target="_blank">
+    <svg class="socialSvg whatsappSvg" viewBox="0 0 16 16"> <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path> </svg>
+  </a>
+</div>             
+
+
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <p class="animate__animated animate__delay-0.25s" data-animate="animate__bounceInDown">Copyright &#169 2024 Decenttourandtravels<br><span>Designed by Yaminhaqani </span></p>
+  </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
