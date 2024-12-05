@@ -852,7 +852,7 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
-  background-image: url(Images/couple\ shikara.webp);
+  background-image: url("https://res.cloudinary.com/dcqbwl3nk/image/upload/v1733417974/couple_shikara_zqf6ju.webp");
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -909,7 +909,7 @@ body {
   width: 100%;
   padding-bottom: 50px;
 
-  background-image: url(Images/leaf\ abstract.webp);
+  background-image: url("https://res.cloudinary.com/dcqbwl3nk/image/upload/v1733417980/leaf_abstract_dtmbje.webp");
   background-size: contain;
 
   > .h2-center {
@@ -1096,7 +1096,7 @@ body {
   align-items: center;
   margin-top: 80px;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("Images/moving-bg.webp") no-repeat center center fixed;
+    url("https://res.cloudinary.com/dcqbwl3nk/image/upload/v1733417977/moving-bg_v4lfq2.webp") no-repeat center center fixed;
   background-position: top 60%;
   background-size: cover; /* Ensure the image covers the section */
 
