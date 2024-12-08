@@ -6,8 +6,21 @@ let links = document.querySelector(".links");
 let line = document.querySelectorAll(".line");
 let currentURL = location.href;
 
-// Event listener for scroll event
-window.addEventListener("scroll", function () {
+
+
+// LOADER STARTS
+window.addEventListener("load", () => {
+  if (loader) {
+    loader.remove();
+  }
+  nav.style.display = "flex";
+});
+// LOADER ENDS
+
+// ScrollTop Starts
+
+// Control visibility based on scrolling
+window.addEventListener("scroll", () => {
   if (
     document.body.scrollTop > window.innerHeight ||
     document.documentElement.scrollTop > window.innerHeight
@@ -23,14 +36,17 @@ function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-// LOADER STARTS
-window.addEventListener("load", () => {
-  loader.remove();
-  nav.style.display = "flex";
-});
-// LOADER ENDS
+ // When the button is clicked, trigger the scrollToTop function
+ scrollToTopBtn.addEventListener("click", scrollToTop);
+
+//ScrollTop Ends
+
+
 
 //HAM STARTS
+let one = document.getElementById("one");
+let two = document.getElementById("two");
+let three = document.getElementById("three");
 let click = true;
 
 ham.addEventListener("click", function () {
@@ -80,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const countUp = (counter, duration) => {
     const countElement = counter.querySelector("h2");
     const targetCount = parseInt(counter.getAttribute("data-count"));
-    const incrementTime = duration / targetCount; // Calculate time for each increment
+    const incrementTime = Math.max(duration / targetCount, 10); // Calculate time for each increment, ensure a minimum of 10ms
     let count = 0;
 
     const updateCount = () => {
@@ -102,7 +118,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const observerOptions = {
     root: null, // Use the viewport as the container
     threshold: 0.3, // Trigger when 30% of the section is visible
-    passive: true, // Optimize for performance
   };
 
   const observerCallback = (entries) => {
@@ -157,15 +172,16 @@ document.getElementById("myForm").addEventListener("submit", function (e) {
 
 //Animation observer starts
 document.addEventListener("DOMContentLoaded", function () {
-  // Select all elements with the 'animate__animated' class
+  const loader = document.querySelector(".loader");
   const animatedElements = document.querySelectorAll(".animate__animated");
 
+  // Observer options
   const observerOptions = {
     root: null, // Observe elements relative to the viewport
-    threshold: 0.35, // Trigger when 30% of the element is visible
-    passive: true, // Optimize for performance
+    threshold: 0.20, // Trigger when 20% of the element is visible
   };
 
+  // Callback for the observer
   const observerCallback = (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -173,12 +189,12 @@ document.addEventListener("DOMContentLoaded", function () {
         const animationClass = entry.target.getAttribute("data-animate");
 
         if (animationClass) {
-          // Add 'animate__animated' and the specific animation class dynamically
+          // Add the animation class dynamically
           entry.target.classList.add("animate__animated", animationClass);
 
           // Ensure the element is visible once the animation starts
           entry.target.style.visibility = "visible";
-          entry.target.style.opacity = "1"; // Ensure full opacity for visibility
+          entry.target.style.opacity = "1"; // Ensure full opacity
         }
 
         // Stop observing the element after it animates
@@ -189,15 +205,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-  // Observe all elements with the 'animate__animated' class
-  animatedElements.forEach((element) => {
-    // Set the initial visibility to hidden and opacity to 0
-    element.style.visibility = "hidden";
-    element.style.opacity = "0";
+  // Function to start observing the elements after the loader disappears
+  function startObservingAfterLoader() {
+    if (loader) {
+      loader.style.display = "none"; // Hide loader
+    }
 
-    // Start observing the element
-    observer.observe(element);
-  });
+    // Once loader is hidden, start observing elements
+    animatedElements.forEach((element) => {
+      element.style.visibility = "hidden"; // Start with hidden visibility
+      element.style.opacity = "0"; // Start with zero opacity
+
+      // Start observing elements for animation when loader is gone
+      observer.observe(element);
+    });
+  }
+
+  // Wait until the loader disappears (or after DOM is loaded) to start observing
+  window.addEventListener("load", startObservingAfterLoader);
 });
+
 
 //Animation observer ends
