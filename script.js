@@ -9,12 +9,12 @@ let currentURL = location.href;
 
 
 // LOADER STARTS
-window.addEventListener("load", () => {
-  if (loader) {
-    loader.remove();
-  }
-  nav.style.display = "flex";
-});
+// window.addEventListener("load", () => {
+//   if (loader) {
+//     loader.remove();
+//   }
+//   nav.style.display = "flex";
+// });
 // LOADER ENDS
 
 // ScrollTop Starts
@@ -172,7 +172,7 @@ document.getElementById("myForm").addEventListener("submit", function (e) {
 
 //Animation observer starts
 document.addEventListener("DOMContentLoaded", function () {
-  const loader = document.querySelector(".loader");
+  // const loader = document.querySelector(".loader");
   const animatedElements = document.querySelectorAll(".animate__animated");
 
   // Observer options
@@ -207,9 +207,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function to start observing the elements after the loader disappears
   function startObservingAfterLoader() {
+
+    //LOADER STARTS
     if (loader) {
-      loader.style.display = "none"; // Hide loader
+      loader.remove();
+      nav.style.display = "flex";
     }
+    //LOADER ENDS
+    
 
     // Once loader is hidden, start observing elements
     animatedElements.forEach((element) => {
